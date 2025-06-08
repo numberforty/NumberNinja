@@ -36,3 +36,21 @@ Most features of the Numi for macOS are supported in terminal. However, these ar
 -   CSS
 -   Variables
 -   Plugins/extension
+
+## Running locally
+
+Clone this repository and ensure [Node.js](https://nodejs.org/) is available. The
+`run_project.sh` script executes a small test for one of the community
+extensions and, if the `numi-cli` binary is on your path, shows an example
+calculation.
+
+```bash
+./run_project.sh
+```
+
+## Adding your plugin
+
+Plugins are simple JavaScript files placed inside Numi's extensions folder. Copy
+your `.js` file to `~/Library/Application Support/com.dmitrynikolaev.numi/extensions`
+(create the directory if it doesn't exist) and restart the application. Examples
+can be found in `plugins/CommunityExtensions`.
